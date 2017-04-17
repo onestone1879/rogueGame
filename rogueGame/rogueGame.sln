@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rogueGame", "rogueGame\rogueGame.csproj", "{611DDFEF-5761-4390-9846-1BC919D28DB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameDriver", "GameDriver\GameDriver.csproj", "{BE486832-C302-47EC-9F09-79E92AD3A4D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{611DDFEF-5761-4390-9846-1BC919D28DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{611DDFEF-5761-4390-9846-1BC919D28DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{611DDFEF-5761-4390-9846-1BC919D28DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE486832-C302-47EC-9F09-79E92AD3A4D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE486832-C302-47EC-9F09-79E92AD3A4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE486832-C302-47EC-9F09-79E92AD3A4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE486832-C302-47EC-9F09-79E92AD3A4D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
