@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameDriver
 {
-    // todo : player应继承人物接口，更改gamePanel，不应将所有细节暴露给界面
-    public class player
+    public class player : playerInter
     {
         public player()
         {

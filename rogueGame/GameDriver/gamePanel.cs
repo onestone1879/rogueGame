@@ -8,11 +8,13 @@ namespace GameDriver
 {
     public class gamePanel
     {
-        public player pl;
+        private player ply;
+        public playerInter pl;
 
         public gamePanel()
         {
-            pl = new player();
+            ply = new player();
+            pl = (playerInter)ply;
         }
     }
 }

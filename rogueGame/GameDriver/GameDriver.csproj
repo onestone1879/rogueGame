@@ -43,6 +43,7 @@
     <Compile Include="compLv.cs" />
     <Compile Include="gamePanel.cs" />
     <Compile Include="player.cs" />
+    <Compile Include="playerInter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
