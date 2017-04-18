@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace GameDriver
 {
-    class player
+    // todo : player应继承人物接口，更改gamePanel，不应将所有细节暴露给界面
+    public class player
     {
+        public player()
+        {
+            gold = 0;
+            exp = 0;
+            lv = 1;
+        }
+
         // gold
         private int gold;
         public int getGold()
@@ -35,15 +43,18 @@ namespace GameDriver
         }
         public int addExp(int add)
         {
+            // TODO : lv up
             exp += add;
+            if (exp > getElu())
+                lvup();
             return exp;
         }
 
         // exp to lv up
-        private int elu;
+        //private int elu;
         public int getElu()
         {
-            return elu;
+            return compLv.getNeedExp(lv);
         }
 
         // lv
@@ -51,6 +62,17 @@ namespace GameDriver
         public int getLv()
         {
             return lv;
-        }       
+        }
+        private int lvup()
+        {
+            int up = 0;
+            while (exp > getElu())
+            {
+                ++up;
+                exp -= getElu();
+                ++lv;
+            }
+            return up;
+        }
     }
 }

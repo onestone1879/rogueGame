@@ -13,7 +13,7 @@ namespace GameDriver
             double p2 = 50.448;
             double p1 = -109.38;
             double p0 = 450;
-            int exp = (int)(Math.Round(p2*lv*lv+p1*lv+p0) * 100);
+            int exp = (int)(Math.Round(p2*lv*lv+p1*lv+p0) / 100) * 100;
             return exp;
         } 
     }
