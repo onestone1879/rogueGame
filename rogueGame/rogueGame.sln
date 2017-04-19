@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "playerTest", "rogueGame\pla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameDriver", "GameDriver\GameDriver.csproj", "{BE486832-C302-47EC-9F09-79E92AD3A4D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spiritTest", "WindowsFormsApp1\spiritTest.csproj", "{3895D339-334D-4CD9-B85C-BDAB77019013}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BE486832-C302-47EC-9F09-79E92AD3A4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE486832-C302-47EC-9F09-79E92AD3A4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE486832-C302-47EC-9F09-79E92AD3A4D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3895D339-334D-4CD9-B85C-BDAB77019013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3895D339-334D-4CD9-B85C-BDAB77019013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3895D339-334D-4CD9-B85C-BDAB77019013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3895D339-334D-4CD9-B85C-BDAB77019013}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
