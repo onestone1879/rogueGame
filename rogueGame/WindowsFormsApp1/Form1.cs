@@ -50,6 +50,8 @@ namespace WindowsFormsApp1
                 counter = 0;
                 logOut("end!");
             }
+
+            refreshHealth();
         }
 
         public Form1()
@@ -59,27 +61,29 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            s1 = new GameDriver.spirit(r.Next(14, 17));
-            s2 = new GameDriver.spirit(r.Next(14, 17));
+            s1 = new GameDriver.spirit(r.Next(15, 19));
+            s2 = new GameDriver.spirit(r.Next(15, 19));
 
-            label3.Text = s1.getLv().ToString();
-            label4.Text = s1.getAtk().ToString();
-            label5.Text = s1.getAmr().ToString();
-            label6.Text = s1.getSpd().ToString();
+            label3.Text = "LV. " + s1.getLv().ToString();
+            label4.Text = "ATK " + s1.getAtk().ToString();
+            label5.Text = "AMR " + s1.getAmr().ToString();
+            label6.Text = "SPD " + s1.getSpd().ToString();
             s1Hth = s1.getMaxHealth();
             progressBar1.Maximum = s1Hth;
             progressBar1.Value = s1Hth;
 
-            label10.Text = s2.getLv().ToString();
-            label9.Text = s2.getAtk().ToString();
-            label8.Text = s2.getAmr().ToString();
-            label7.Text = s2.getSpd().ToString();
+            label10.Text = "LV. " + s2.getLv().ToString();
+            label9.Text = "ATK " + s2.getAtk().ToString();
+            label8.Text = "AMR " + s2.getAmr().ToString();
+            label7.Text = "SPD " + s2.getSpd().ToString();
             s2Hth = s2.getMaxHealth();
             progressBar2.Maximum = s2Hth;
             progressBar2.Value = s2Hth;
 
             logOut("Create spirit 1 with lv " + s1.getLv().ToString());
             logOut("Create spirit 2 with lv " + s2.getLv().ToString());
+
+            refreshHealth();
 
             counter = 0;
             timer1.Enabled = true;
@@ -91,6 +95,16 @@ namespace WindowsFormsApp1
             textBox1.Text += System.Environment.NewLine;
             textBox1.Select(textBox1.Text.Length - 1, 1);
             textBox1.ScrollToCaret();
+        }
+
+        private void refreshHealth()
+        {
+            string s1h = s1Hth.ToString() + " / " + s1.getMaxHealth().ToString();
+            string s2h = s2Hth.ToString() + " / " + s2.getMaxHealth().ToString();
+            //drawHealth.dh(progressBar1, s1h);
+            //drawHealth.dh(progressBar2, s2h);
+            label11.Text = s1h;
+            label12.Text = s2h;
         }
     }
 }
