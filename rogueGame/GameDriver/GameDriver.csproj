@@ -46,6 +46,7 @@
     <Compile Include="playerInter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="spirit.cs" />
+    <Compile Include="spiritAb.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="compSheet.xlsx" />
